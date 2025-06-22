@@ -1,0 +1,47 @@
+body {
+    margin:0;
+}
+a {
+    color:black;
+}
+h1 {
+    font-family: "Diphylleia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:40px;
+    text-align:left;
+
+    border-bottom:1px solid gray;
+    margin:0px 0px 0px 10px;
+    padding:10px;
+}
+
+#grid {
+    display:grid;
+    grid-template-columns:450px 1fr;
+    margin-top:20px;
+
+    font-family: "Noto Serif KR", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#grid ol {
+    width: 1000px;
+    margin:0px 0px 0px 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+@media(max-width:600px) {
+    #grid{
+    display:block;
+    }
+    #grid ol{
+        border-right:none;
+    }
+    h1 {
+        border-bottom:none;
+    }
+}
